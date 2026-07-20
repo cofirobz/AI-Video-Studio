@@ -1,0 +1,6 @@
+# Creative/format defaults for every episode. Loaded into core.config.VideoSettings.
+aspect_ratio: "9:16"
+min_duration_seconds: 15
+max_duration_seconds: 60
+hook_duration_seconds: 2.0
+safe_margin_percent: 10

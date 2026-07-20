@@ -1,0 +1,10 @@
+# Matches core.prompt_library.PromptTemplate. Copy this into
+# prompts/<category>/<name>.yaml to add a new reusable prompt.
+name: ""
+category: ""   # claude | claude_code | image | video | voice | thumbnail
+description: ""
+template: |
+  Write your prompt here. Use {variable_name} placeholders for anything that
+  changes per use, and list each one in `variables` below so
+  PromptLibrary.render() can validate them.
+variables: []

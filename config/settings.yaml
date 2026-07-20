@@ -1,0 +1,8 @@
+# Project-level identity. Loaded into core.config.ProjectSettings.
+name: "AI Shorts Studio"
+version: "0.1.0"
+environment: "development"   # development | production
+default_platforms:
+  - youtube_shorts
+  - tiktok
+timezone: "UTC"

@@ -1,0 +1,6 @@
+# Loaded into core.config.LoggingSettings by core.logging_setup.configure_logging.
+level: "INFO"          # DEBUG | INFO | WARNING | ERROR
+file: "logs/studio.log"
+max_bytes: 5000000     # rotate at ~5MB
+backup_count: 3
+console: true

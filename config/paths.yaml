@@ -1,0 +1,15 @@
+# All paths are relative to the studio/ project root.
+# Loaded into core.config.PathsSettings.
+#
+# Everything specific to one episode (script, checklist, prompts, generated
+# assets, renders, exports) lives inside that episode's own workspace folder
+# under episodes/<id>/ — see core/episode_repository.py. The paths below are
+# only the shared, project-wide locations.
+episodes: "episodes"        # root containing every episode's self-contained workspace
+characters: "characters"     # shared character records, reused across episodes
+prompts: "prompts"            # shared, reusable prompt *template* library (by category)
+assets: "assets"               # shared brand assets: logos, fonts, backgrounds, character sheets
+voices: "voices"                # shared voice reference samples, reused across episodes
+music: "music"                   # shared music/SFX library, referenced by episodes
+logs: "logs"
+templates: "templates"

@@ -1,0 +1,11 @@
+name: "run_episode_pipeline"
+category: "claude_code"
+description: "Drive the automation pipeline for a single episode end to end."
+template: |
+  Run the automation pipeline for episode '{episode_id}':
+  python -m core.cli run-pipeline --episode-id {episode_id}
+
+  Then report which stage it stopped at and why, using the log output under
+  logs/studio.log.
+variables:
+  - episode_id

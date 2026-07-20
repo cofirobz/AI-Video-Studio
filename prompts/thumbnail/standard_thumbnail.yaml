@@ -1,0 +1,11 @@
+name: "standard_thumbnail"
+category: "thumbnail"
+description: "Generate a thumbnail with an exaggerated expression tied to the episode hook."
+template: |
+  {character_descriptor}, exaggerated expression showing {emotion}, {action}, bold readable
+  composition, {style}, vertical, high contrast, thumbnail-safe
+variables:
+  - character_descriptor
+  - emotion
+  - action
+  - style

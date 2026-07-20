@@ -1,0 +1,8 @@
+# Default DaVinci Resolve render settings. Loaded into core.config.RenderSettings.
+# Episodes may override any of these via their render_settings_override field.
+resolution_width: 1080
+resolution_height: 1920
+fps: 30
+codec: "H.264"
+bitrate_mbps: 20
+output_format: "mp4"

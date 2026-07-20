@@ -1,0 +1,25 @@
+# Per-stage toggles for the automation engine (automation/pipeline.py).
+# 'enabled' is informational for now — every unimplemented stage still raises
+# NotImplementedError when run. This becomes meaningful once stages have real
+# implementations that can be turned on/off per environment.
+generate_script:
+  enabled: false
+  max_retries: 1
+generate_prompts:
+  enabled: true
+  max_retries: 1
+generate_assets:
+  enabled: false
+  max_retries: 2
+import_to_editor:
+  enabled: false
+  max_retries: 1
+render:
+  enabled: false
+  max_retries: 1
+export:
+  enabled: false
+  max_retries: 1
+upload:
+  enabled: false
+  max_retries: 1

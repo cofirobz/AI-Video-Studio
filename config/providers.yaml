@@ -1,0 +1,10 @@
+# Which provider implementation each category resolves to.
+# See editor/, video/, image/, voice/, upload/, storage/base.py for the
+# registered names and get_provider(). Switching providers is a one-line
+# change here — never a code change.
+editor: "davinci"     # davinci | remotion | ffmpeg
+video: "runway"         # runway | veo | kling
+image: "gpt_image"       # gpt_image | flux
+voice: "elevenlabs"       # elevenlabs | cartesia
+upload: "youtube"          # youtube | tiktok
+storage: "local"            # local

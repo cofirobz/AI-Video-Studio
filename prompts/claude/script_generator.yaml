@@ -1,0 +1,27 @@
+name: "script_generator"
+category: "claude"
+description: "Draft a short-form script for an episode, given the concept and characters."
+template: |
+  You are writing a script for a {duration_seconds}-second AI-generated Short/TikTok.
+
+  Character(s): {character_summary}
+  Series: {series}
+  Episode concept: {hook}
+  Tone: {tone}
+
+  Requirements:
+  - Hook in the first 1-2 seconds — no slow intro
+  - Punchy, spoken-style dialogue (this will be read aloud by TTS)
+  - Clear visual beats I can turn into image/video prompts
+  - End on a payoff, punchline, or hook for the next episode
+
+  Output format:
+  1. Script (dialogue + action lines)
+  2. Scene-by-scene visual breakdown
+  3. Suggested title (3 options)
+variables:
+  - duration_seconds
+  - character_summary
+  - series
+  - hook
+  - tone

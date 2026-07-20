@@ -1,0 +1,31 @@
+# Matches core.models.episode.Episode. `python -m core.cli new-episode` copies
+# this and fills in id/title automatically — everything else can be edited
+# by hand afterwards, or filled in later by the automation pipeline. Saved as
+# episodes/{id}/episode.yaml — the rest of that folder (script.md,
+# checklist.md, prompts/, assets/, renders/, exports/) is scaffolded
+# alongside it by core.episode_generator.
+id: ""
+title: ""
+hook: ""              # one sentence: what grabs attention in the first 1-2 seconds
+story: ""              # short outline / logline
+
+series: ""
+characters: []          # character ids from characters/
+scenes: []               # list of {index, description, image_prompt, video_prompt, voice_line, duration_seconds}
+
+music: null              # path under music/tracks/
+sound_effects: []         # paths under music/sound_effects/
+captions:
+  enabled: true
+  style: "default"
+  font: null
+
+render_settings_override: {}   # per-episode overrides merged onto config/render_settings.yaml
+
+stage: "idea"                   # idea | script | voice | visuals | edit | qc | thumbnail | published
+publishing_status: "draft"       # draft | in_production | ready_to_publish | published | archived
+platform_targets:
+  - youtube_shorts
+  - tiktok
+
+version: 1

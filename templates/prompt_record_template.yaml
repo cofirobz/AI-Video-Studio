@@ -1,0 +1,14 @@
+# Matches core.models.prompt_record.PromptRecord. Saved as
+# episodes/{id}/prompts/{type}.yaml — one per generation kind (image, video,
+# voice, thumbnail). core.episode_generator constructs these directly rather
+# than loading this file; it's kept here as the schema reference for anyone
+# creating one by hand.
+id: ""
+episode_id: ""
+provider: ""      # e.g. the default for this type from config/providers.yaml
+type: ""            # image | video | voice | thumbnail
+status: "draft"       # draft | ready | generated | failed
+prompt: ""
+negative_prompt: ""
+notes: ""
+version: 1

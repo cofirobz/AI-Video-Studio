@@ -1,0 +1,12 @@
+name: "animate_scene"
+category: "video"
+description: "Animate a still scene image into a short video clip."
+template: |
+  Animate this image: {motion_level} motion, {camera_movement}, {duration_seconds}s,
+  {character_descriptor} {specific_action}
+variables:
+  - motion_level
+  - camera_movement
+  - duration_seconds
+  - character_descriptor
+  - specific_action

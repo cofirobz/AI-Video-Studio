@@ -1,0 +1,19 @@
+# Matches core.models.character.Character. `python -m core.cli new-character`
+# copies this and fills in id/name automatically.
+id: ""
+name: ""
+role: ""
+series: ""
+status: "concept"   # concept | in_development | active | retired
+
+appearance: []
+personality: []
+voice:
+  tone: ""
+  accent_style: ""
+  reference_id: null   # TTS voice ID / voice-clone reference, once a provider is wired up
+
+strengths: []
+weaknesses: []
+catchphrases: []
+relationships: []        # list of {character_id, description}

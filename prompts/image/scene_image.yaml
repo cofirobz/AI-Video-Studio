@@ -1,0 +1,11 @@
+name: "scene_image"
+category: "image"
+description: "Generate a single scene image consistent with a character's established design."
+template: |
+  {character_descriptor}, {action}, {setting}, {lighting}, {style}, vertical 9:16, high detail
+variables:
+  - character_descriptor
+  - action
+  - setting
+  - lighting
+  - style

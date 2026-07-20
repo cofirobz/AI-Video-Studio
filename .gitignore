@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+
+# Secrets
+.env
+
+# Generated/runtime artifacts — heavy binaries inside an episode workspace
+logs/*.log
+episodes/*/renders/**
+episodes/*/exports/**
+
+# OS
+.DS_Store
+Thumbs.db

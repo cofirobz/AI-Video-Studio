@@ -1,0 +1,14 @@
+name: "tts_line"
+category: "voice"
+description: "Generate a single voice line for a character."
+template: |
+  Voice: {voice_reference}
+  Tone: {tone}
+  Pace: {pace}
+
+  Line: "{line}"
+variables:
+  - voice_reference
+  - tone
+  - pace
+  - line
